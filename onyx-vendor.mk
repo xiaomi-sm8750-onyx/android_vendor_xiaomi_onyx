@@ -2524,6 +2524,7 @@ PRODUCT_PACKAGES += \
     libnicm_recovery \
     libnicm_utils \
     libnicm_vh \
+    libnova \
     libnspdependencyservice \
     libnspdescriptorhandlerservice \
     libnspdiagservice \
