@@ -37442,6 +37442,7 @@ cc_prebuilt_library_shared {
                 "libGLESv2",
                 "libnativewindow",
                 "libminikin.xiaomi",
+                "libcom.xiaomi.ionutils",
                 "libMiPhotoFilter",
                 "libc++",
                 "libc",

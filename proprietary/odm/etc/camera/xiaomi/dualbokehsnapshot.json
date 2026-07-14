@@ -221,6 +221,16 @@
                  "NodePropertyValue":4
             }
             ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinejpeg",
+            "NodeInstance": "JpegInstanceFinal2",
+            "NodeProperty":[
+            {
+                 "NodePropertyName":"NodeMask",
+                 "NodePropertyValue":4
+            }
+            ]
         }
         ]
     },
@@ -590,6 +600,28 @@
             },
             "DstPort": {
                 "PortId": 4,
+                "NodeInstance": "jpegrAggrInstance"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 5,
+                "NodeInstance": "WatermarkInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "JpegInstanceFinal2",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "JpegInstanceFinal2",
+                "PortFormat": "BLOB"
+            },
+            "DstPort": {
+                "PortId": 8,
                 "NodeInstance": "jpegrAggrInstance"
             }
         },
